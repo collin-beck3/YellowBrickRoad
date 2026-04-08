@@ -27,6 +27,8 @@ public class Picture
     private Square garage; 
     private Square window3;
     private MyRectangle2 road; 
+    private MyRectangle3 tree;
+    private Triangle tree2; 
 
     /**
      * Constructor for objects of class Picture
@@ -134,6 +136,20 @@ public class Picture
         road.moveVertical(180);
         road.changeSize(400, 30);
         road.makeVisible();
+
+        tree = new MyRectangle3();
+        tree.changeColor("brown");
+        tree.moveHorizontal(-40);
+        tree.moveVertical(40);
+        tree.changeSize(20, 150);
+        tree.makeVisible();
+
+        tree2 = new Triangle();
+        tree2.changeColor("green");
+        tree2.changeSize(40, 100);
+        tree2.moveHorizontal(-20);
+        tree2.moveVertical(70);
+        tree2.makeVisible();
     }
 
     /**
