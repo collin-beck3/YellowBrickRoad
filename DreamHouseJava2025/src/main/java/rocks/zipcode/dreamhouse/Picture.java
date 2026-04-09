@@ -29,6 +29,10 @@ public class Picture
     private MyRectangle2 road; 
     private MyRectangle3 tree;
     private Triangle tree2; 
+    private Square free; 
+    private Square free2;
+    private Square free3;
+    private Circle coco; 
 
     /**
      * Constructor for objects of class Picture
@@ -44,7 +48,7 @@ public class Picture
     public void draw()
     {
         sky = new Square();
-        sky.changeColor("black");
+        sky.changeColor("purple");
         sky.moveHorizontal(-200);
         sky.moveVertical(-200);
         sky.changeSize(500);
@@ -110,9 +114,9 @@ public class Picture
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("white");
+        sun.changeColor("sunset");
         sun.moveHorizontal(180);
-        sun.moveVertical(-45);
+        sun.moveVertical(-5);
         sun.changeSize(60);
         sun.makeVisible();
 
@@ -146,10 +150,38 @@ public class Picture
 
         tree2 = new Triangle();
         tree2.changeColor("green");
-        tree2.changeSize(40, 100);
+        tree2.changeSize(50, 100);
         tree2.moveHorizontal(-20);
-        tree2.moveVertical(70);
+        tree2.moveVertical(60);
         tree2.makeVisible();
+
+        free = new Square();
+        free.changeColor("grey");
+        free.moveHorizontal(135);
+        free.moveVertical(125);
+        free.changeSize(10);
+        free.makeVisible();
+
+        free2 = new Square();
+        free2.changeColor("grey");
+        free2.moveHorizontal(153);
+        free2.moveVertical(125);
+        free2.changeSize(10);
+        free2.makeVisible();
+
+        free3 = new Square();
+        free3.changeColor("grey");
+        free3.moveHorizontal(170);
+        free3.moveVertical(125);
+        free3.changeSize(10);
+        free3.makeVisible();
+
+        coco = new Circle();
+        coco.changeColor("brown");
+        coco.moveHorizontal(30);
+        coco.moveVertical(55);
+        coco.changeSize(15);
+        coco.makeVisible();
     }
 
     /**
@@ -177,7 +209,8 @@ public class Picture
             wall.changeColor("red");
             window.changeColor("black");
             roof.changeColor("green");
-            sun.changeColor("yellow");
+            sun.changeColor("sunset");
+            coco.changeColor("brown");
         }
     }
 

@@ -147,6 +147,10 @@ public class Canvas
             graphic.setColor(new Color(128, 128, 128));
         else if (colorString.equals("brown"))
              graphic.setColor(new Color(150, 75, 0));
+        else if (colorString.equals("sunset"))
+             graphic.setColor(new Color(255, 88, 10));
+        else if (colorString.equals("purple"))
+             graphic.setColor(new Color(41, 30, 69));
         else
             graphic.setColor(Color.black);
     }
